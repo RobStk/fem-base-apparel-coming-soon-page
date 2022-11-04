@@ -1,0 +1,20 @@
+@use "../globals/colors";
+
+$first-part-color: colors.$desaturated-red;
+$second-part-color: colors.$neutral-dark-grayish-red;
+
+.fancy-header {
+    text-transform: uppercase;
+    color: $second-part-color;
+    letter-spacing: 0.6rem;
+    font-weight: 600;
+
+    & :first-child {
+        color: $first-part-color;
+        font-weight: 300;
+    }
+
+    & > * {
+        display: block;
+    }
+}

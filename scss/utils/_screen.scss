@@ -1,0 +1,8 @@
+@use "../globals/breakpoints" as bp;
+$breakpoints: bp.$breakpoints;
+
+@mixin respond-to($size) {
+    @media (min-width: map-get($breakpoints, $size)) {
+        @content;
+    }
+}
