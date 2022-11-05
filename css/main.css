@@ -59,7 +59,8 @@ p {
   justify-content: center;
 }
 .email-form input {
-  padding: 1rem 1.65rem;
+  padding-left: 1.65rem;
+  line-height: 370%;
   border-radius: 50vmax;
   outline: none;
   width: 100%;
@@ -108,7 +109,7 @@ p {
 
 .main-footer {
   position: fixed;
-  bottom: 15px;
+  bottom: 20px;
   width: 100%;
 }
 
@@ -177,7 +178,7 @@ p {
     grid-row-end: 4;
     grid-column-start: 2;
     grid-column-end: 3;
-    height: 100%;
+    height: 100vh;
     width: 100%;
   }
   .coming-soon__header {
@@ -193,6 +194,9 @@ p {
   .coming-soon__form {
     padding-left: 10rem;
     padding-right: 10rem;
+  }
+  .coming-soon__form input {
+    font-size: 16px;
   }
   .coming-soon__form button {
     padding-left: 2.4rem;

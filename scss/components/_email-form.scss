@@ -1,11 +1,17 @@
 @use "../globals/colors";
 @use "../globals/gradients";
+@use "../utils/screen";
 
 $submit-gradient: gradients.$linear2;
+
 $color-main: colors.$desaturated-red;
 $color-hover: colors.$light-red;
+
 $space-medium: 1rem;
 $space-large: 1.65rem;
+
+$space-medium-desktop: 1.2rem;
+$space-large-desktop: 2.4rem;
 
 .email-form {
     position: relative;
@@ -13,7 +19,8 @@ $space-large: 1.65rem;
     justify-content: center;
 
     input {
-        padding: $space-medium $space-large;
+        padding-left: $space-large;
+        line-height: 370%;
         border-radius: 50vmax;
         outline: none;
         width: 100%;
