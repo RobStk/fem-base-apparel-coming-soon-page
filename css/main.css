@@ -11,13 +11,13 @@ body {
   align-items: center;
   justify-items: center;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 16px;
+  font-size: 1em;
   color: hsl(0deg, 36%, 70%);
   background: linear-gradient(135deg, hsl(0deg, 0%, 100%), hsl(0deg, 100%, 98%));
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 2.625rem;
   margin-top: 42px;
   margin-bottom: 0.8rem;
 }
@@ -57,28 +57,29 @@ p {
   position: relative;
   display: flex;
   justify-content: center;
+  margin-bottom: 1.65rem;
 }
 .email-form input {
   padding-left: 1.65rem;
-  line-height: 370%;
+  padding-right: 5.65rem;
+  line-height: 3.5em;
   border-radius: 50vmax;
   outline: none;
   width: 100%;
-}
-.email-form input[type=email] {
   background: none;
   border: 1px solid hsl(0deg, 36%, 70%);
   opacity: 45%;
 }
-.email-form input[type=email]:focus {
+.email-form input:focus {
   opacity: 100%;
 }
 .email-form button {
   position: absolute;
   display: flex;
   align-items: center;
+  justify-content: center;
   right: 0;
-  padding: 0 1.65rem;
+  width: 4rem;
   height: 100%;
   border: none;
   border-radius: 50vmax;
@@ -91,6 +92,38 @@ p {
   background: none;
   background-color: hsl(0deg, 93%, 88%);
   box-shadow: 0px 14px 28px 0px hsl(0deg, 36%, 70%);
+}
+.email-form::after {
+  content: "Please provide a valid email";
+  font-size: 0.8333rem;
+  color: hsl(0deg, 93%, 68%);
+  position: absolute;
+  left: 1.65rem;
+  bottom: -1rem;
+  z-index: 100;
+  display: none;
+}
+.email-form .error-icon {
+  position: absolute;
+  align-self: center;
+  height: 1.4em;
+  z-index: 100;
+  right: 5rem;
+  display: none;
+}
+.email-form.error::after, .email-form.error .error-icon {
+  display: unset;
+}
+@media (min-width: 1440px) {
+  .email-form input {
+    padding-right: 8.15rem;
+  }
+  .email-form button {
+    width: 6.5rem;
+  }
+  .email-form .error-icon {
+    right: 7.5rem;
+  }
 }
 
 .fancy-header {
@@ -178,25 +211,25 @@ p {
     grid-row-end: 4;
     grid-column-start: 2;
     grid-column-end: 3;
-    height: 100vh;
+    max-height: 100vmax;
     width: 100%;
   }
   .coming-soon__header {
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 10.6em;
+    padding-right: 10.6em;
     align-self: center;
   }
   .coming-soon__text {
     text-align: left;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 10.6em;
+    padding-right: 10.6em;
   }
   .coming-soon__form {
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 10.6em;
+    padding-right: 10.6em;
   }
   .coming-soon__form input {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .coming-soon__form button {
     padding-left: 2.4rem;
