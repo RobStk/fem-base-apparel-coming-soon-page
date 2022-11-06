@@ -71,7 +71,7 @@ $error-width: 1rem;
         color: $color-error;
         position: absolute;
         left: $space-large;
-        bottom: -$space-medium;
+        bottom: -1.7em;
         z-index: 100;
         display: none;
     }
@@ -86,7 +86,14 @@ $error-width: 1rem;
     }
 
     &.error {
-        &::after, .error-icon {
+        input {
+            border-color: $color-error;
+            border-width: 2px;
+            opacity: 100%;
+        }
+
+        &::after,
+        .error-icon {
             display: unset;
         }
     }
