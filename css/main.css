@@ -198,7 +198,7 @@ p {
     grid-template-columns: 1fr -webkit-max-content;
     grid-template-columns: 1fr max-content;
     gap: 1rem 1.5rem;
-    background-image: url("../../images/bg-pattern-desktop.svg");
+    background-image: url("./../images/bg-pattern-desktop.svg");
   }
   .coming-soon h1 {
     font-size: 64px;
