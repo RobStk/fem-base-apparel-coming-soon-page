@@ -55,13 +55,17 @@ $space-small: 0.8rem;
         grid-template-rows: 10rem max-content 1fr;
         grid-template-columns: 1fr max-content;
         gap: 1rem 1.5rem;
+        background-image: url("../../images/bg-pattern-desktop.svg");
 
         h1 {
             font-size: 64px;
+            line-height: 1.05;
+            margin-bottom: 1.5rem;
         }
 
         p {
             font-size: unset;
+            line-height: 1.8;
         }
 
         .img-mobile {
